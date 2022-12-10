@@ -1,0 +1,784 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+body{
+    
+    background-color: rgba(190, 40, 128, 0.678);
+    height: 1000px;
+}
+
+.page{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    height: 700px;
+    /* background-color: rgb(197, 190, 190); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    
+}
+
+.page1{
+    display: flex;
+    background-color: rgb(247, 245, 245);
+    height: 82.5%;
+    width: 92.5%;
+    align-items: flex-start;
+    
+}
+
+.first-part{
+    background-image:url('./logo/fence-g077cf0a1a_1280.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+    position: relative;
+    animation-name: moving-fp;
+    animation-duration: 3s;
+
+    /* background-color: pink; */
+}
+
+@keyframes moving-fp{
+    from{right: 200px;}
+    to{right: 0px;}
+}
+
+.profile-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.profile-pic{
+    
+    height: 120px;
+    width: 120px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: red solid 1px;
+}
+
+#profile{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.menu-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38%;
+    width: 100%;
+    /* background-color: green; */
+    /* background-color: green; */
+}
+
+.menu-bar-menu{
+    text-align: center;
+    /* background-color: orange; */
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.home{
+    border-left: 6px solid rgb(131, 131, 216);  
+    background-color: rgb(229, 248, 248);
+}
+
+.profile{
+    border-left: 6px solid rgb(216, 131, 209);
+    background-color: rgb(229, 248, 248);
+}
+
+.inbox{
+    border-left: 6px solid rgb(131, 206, 216);
+    background-color: rgb(229, 248, 248); 
+}
+
+.home , .profile, .inbox{
+    position: relative;
+    animation: moving-menubar-button 800ms;
+    animation-delay: 4.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes moving-menubar-button{
+    from{bottom: 0px;}
+    to{bottom: 20px;}
+}
+
+#home-logo , #profile-logo , #inbox-logo{
+    height: 30px;
+    width: 30px;
+    vertical-align: text-top;
+}
+
+#home-logo:hover , #profile-logo:hover , #inbox-logo:hover{
+    
+    transform: rotateY(180deg);
+}
+
+#profile-logo:hover , #inbox-logo:hover{
+    transform: skew(20deg);
+}
+
+#home-i , #profile-i , #inbox-i{
+    color: black;
+    text-decoration: none;
+}
+
+#profile-i:hover ,#inbox-i:hover ,#home-i:hover{
+    background-color: rgb(236, 236, 236);
+    /* border: solid black 0.1px; */
+    border-radius: 10%;
+    color: rebeccapurple;
+    font-size: larger;
+}
+
+.profile{
+    margin-right: 5px;
+}
+
+#instagram ,#linkdin ,#facebook ,#twitter{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+#instagram{
+    /* border-top-right-radius: 8px;
+    border-top-left-radius: 8px; */
+    border-radius: 8px;
+    position: relative;
+    animation: color1 3s infinite;
+}
+
+#linkdin{
+    position: relative;
+    animation: color2 3s infinite;
+    animation-delay: 200ms;
+}
+
+#facebook{
+    /* border-top-right-radius: 13px;
+    border-top-left-radius: 13px; */
+    border-radius: 50%;
+    position: relative;
+    animation: color3 3s infinite;
+    animation-delay: 400ms;
+}
+
+#twitter{
+    border-radius: 50%;
+    position: relative;
+    animation: color4 3s infinite;
+    animation-delay: 600ms;
+}
+
+@keyframes color1{
+    0%{background-color: red; bottom: 0px;}
+    25%{background-color: blue;}
+    50%{background-color: green; bottom: 50px;}
+    75%{background-color: yellow;}
+    100%{background-color: purple; bottom: 0px;} 
+
+}
+
+@keyframes color2{
+    25%{background-color: red;}
+    50%{background-color: blue;bottom: 50px;}
+    75%{background-color: green;}
+    100%{background-color: yellow;bottom: 0px;}
+    0%{background-color: purple;bottom: 0px;}
+
+}
+
+@keyframes color3{
+    50%{background-color: red;bottom: 50px; }
+    75%{background-color: blue;}
+    100%{background-color: green;bottom: 0px;}
+    0%{background-color: yellow;bottom: 0px;}
+    25%{background-color: purple;}
+
+}
+
+@keyframes color4{
+    75%{background-color: red;}
+    100%{background-color: blue;bottom: 0px;}
+    0%{background-color: green;bottom: 0px;}
+    25%{background-color: yellow;}
+    50%{background-color: purple;bottom: 50px;}
+    /* from {background-color: red; bottom: 0px;}
+    to {background-color: yellow; bottom: 50px;} 
+    */
+} 
+
+    
+#instagram:hover, #linkdin:hover, #facebook:hover, #twitter:hover{
+    
+    transform: scale(1.5);
+}
+
+.social-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 32%;
+    width: 100%;
+    /* /* background-color: yellow;  */
+}
+
+
+.second-part{
+    /* background-color: green; */
+    height: 100%;
+    width: 100%;
+    background-image: url('./logo/workplace-ge95a7c9c5_1920.jpg');
+    background-size: cover;
+    position: relative;
+    animation-name: moving-sp;
+    animation-duration: 3s;
+
+}
+
+@keyframes moving-sp{
+    from{left: 200px;}
+    to{left: 0px;}
+}
+
+.top-menu-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: black; */
+    width: 100%;
+    height: 10%;
+    
+   
+
+}
+
+#contact , #project , #work , #about{
+    /* color: white; */
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+#about{
+    position: relative;
+    margin-left: 500px;
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+
+#work{
+    position: relative;
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-delay: 150ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+#project{
+    position: relative;
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-delay: 300ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+#contact{
+    position: relative;
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-delay: 450ms;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes move{
+    /* 0%{left:0px; top:0px}
+    25%{left:20px; top:0px}
+    50%{left:20px; top:20px}
+    75%{left:0px; top:20px}
+    100%{left: 0px; top: 0px;} */
+    from{color: blue;top: 0px;}
+    to{color: green;top: 80px;}
+}
+
+
+
+
+#about:hover, #contact:hover , #project:hover , #work:hover {
+    opacity: 1.0;
+    
+}
+
+.sp-part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 100%;
+    /* background-color: yellow; */
+    
+}
+
+.workwith{
+    height: 75%;
+    width: 10%;
+    background-color: rgb(221, 63, 5);
+    border-radius: 27px;
+    border: none;
+}
+
+#workwith{
+    font-size: 18px;
+    color: pink;
+    position: relative;
+    animation: moving-workwith 6.5s;
+    
+}
+
+@keyframes moving-workwith{
+    from{bottom: 2000px;}
+    to{bottom: 0px;}
+}
+
+
+
+.sp-part3{
+    height: 65%;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.coding-area-section{
+    /* background-color: brown; */
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.coding-area{
+    /* background-color: pink; */
+    
+    height: 80%;
+    width: 45%;
+    border: 2px grey solid;
+    border-radius: 12px;
+    position: relative;
+    animation: animate-coding-area 4s;
+    /* animation-delay: 3s; */
+
+}
+
+@keyframes animate-coding-area{
+    from{left: 3000px;}
+    to{left: 0px;}
+}
+
+#first-text, #second-text, #third-text{
+    margin-left: 25px;
+    
+}
+
+#first-text{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    
+}
+
+#second-text{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5.50s;
+    
+}
+
+#third-text{
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+    
+}
+
+@keyframes example{
+    from{left: 10000px;}
+    to{left: 0px;}
+}
+
+#one , #two , #three{
+    font-size: 18px;
+    color: grey;
+    font-weight: normal;
+}
+
+#arrow{
+    font-size: 24px;
+    color: grey;
+    font-weight: normal;
+}
+
+#web , #namechange{
+    font-size: 25px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.code-text-section{
+    margin-top: 5px;
+    /* background-color: blue; */
+    height: 10%;
+    width: 100%;
+}
+
+#code-text{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 270px;
+    position: relative;
+    animation: moving-code-text 6.50s;
+    
+}
+
+@keyframes moving-code-text{
+    from{right: 20000px;}
+    to{right: 0px;}
+}
+
+.sp-part4{
+    height: 15%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+}
+
+.part-4-one{
+    height: 100%;
+    width: 60%;
+    /* background-color: pink; */
+}
+
+.part-4-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    /* background-color: yellow; */
+}
+
+/* .html , .css , .js , .react , .mongodb , .wordpress{
+    background-color: green;
+} */
+
+#html:hover , #css:hover , #js:hover , #react:hover , #mongodb:hover , #wordpress:hover{
+    transform: scale(1.2);
+    
+}
+
+#html:hover , #css:hover , #js:hover , #react:hover , #mongodb:hover , #wordpress:hover{
+    position: relative;
+    animation-name: animate-logo;
+    animation-duration: 1s;
+    
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
+    
+}
+
+
+
+@keyframes animate-logo{
+    0%{bottom: 0px;}
+    50%{bottom: 20px;}
+    100%{bottom: 0px;}
+}
+
+.page2{
+    /* background-color: black; */
+    height: 300px;
+    width: 92.5%;
+}
+
+.section-page2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    height: 100%;
+    width: 100%;
+
+}
+
+.about-section{
+    font-family:sans-serif;
+    color: white;
+    background-color: rgb(134, 127, 127);
+    height: 100%;
+    width: 50%;
+    border-bottom: 6px solid;
+    border-bottom-left-radius: 12px;
+    /* border-bottom-right-radius: 12px; */
+    border-color: black;
+
+    position: relative;
+    animation-name: moving-about;
+    animation-duration: 3s;
+}
+
+@keyframes moving-about{
+    from{right: 200px;}
+    to{right: 0px;}
+}
+
+#aboutme{
+    color:white;
+    margin-left: 25px;
+}
+
+
+.about-menu{
+    
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.who , .faq , .description , .question{
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+    height: 100%;
+    width:  150px;
+    opacity: 0.8;
+    
+}
+
+#who , #faq , #description , #question{
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    color:whitesmoke;
+   
+    
+}
+
+.who:hover , .faq:hover , .description:hover , .question:hover{
+    
+    border-bottom: 1px solid white; 
+    opacity: 1.0;   
+    color: white;
+}
+
+.self-introduction{
+    /* background-color: green; */
+    height: 60%;
+    width: 100%;
+}
+
+.self-introduction-block{
+    color: white;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.contact-section{
+    height: 100%;
+    width: 33%;
+    
+    /* border: 1px dotted black; */
+    background-color: rgb(252, 208, 215);
+    border-bottom: 6px solid;
+    /* border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; */
+    border-color: black;
+
+    position: relative;
+    animation-name: moving-contact;
+    animation-duration: 3s;
+}
+
+@keyframes moving-contact{
+    from{top: 200px;}
+    to{top: 0px;}
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+}
+
+#contactme{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 40px;
+    color:rgb(114, 53, 172);
+}
+
+form{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#name , #email , #number , #describe{
+    color: rgb(114, 53, 172);
+}
+
+#namebox, #emailbox , #numberbox , #submit {
+    background-color: rgb(238, 234, 234);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#submit{
+    margin-left: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: rgb(114, 53, 172);
+}
+
+
+textarea{
+    resize: none;
+    background-color: rgb(238, 234, 234);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.hire-section{
+    height: 100%;
+    width: 17%;
+    background-color: rgb(161, 161, 243);
+    border-bottom: 6px solid;
+    /* border-bottom-left-radius: 12px; */
+    border-bottom-right-radius: 12px;
+    border-color: black;
+
+    position: relative;
+    animation-name: moving-hire;
+    animation-duration: 3s;
+    
+}
+
+@keyframes moving-hire{
+    from{left: 200px;}
+    to{left: 0px;}
+}
+
+.hire{
+    margin-top: 30px;
+    height: 78%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.hire-text{
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgb(161, 161, 243);
+    text-align: center;
+    
+}
+
+#click-text{
+    padding-top: 30px;
+    font-size: xx-large;
+    position: relative;
+    animation-name: moving-last;
+    animation-duration: 1.5s;
+    
+}
+
+#down{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    animation-name: moving-last;
+    animation-duration: 2s;
+    /* animation-delay: 300ms; */
+    
+}
+
+#hireme{
+    padding: 10px 25px;
+    font-size: larger;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(236, 0, 0);
+    position: relative;
+    animation-name: moving-last;
+    animation-duration: 2.5s;
+    /* animation-delay: 600ms; */
+}
+
+#hireme:hover{
+    transform: scale(1.2);
+}
+
+
+.copy-right{
+    height: 12%;
+    width: 100%;
+    background-color: black;
+    /* border-bottom-left-radius: 12px; */
+    border-bottom-right-radius: 7px;
+    border-color: black;
+    font-size: small;
+    color: white;
+    position: relative;
+    animation-name: moving-last;
+    animation-duration: 3s;
+    /* animation-delay: 900ms; */
+    
+}
+
+@keyframes moving-last{
+    from{top: 400px;}
+    to{top: 0px;}
+}
+
+#copy-edit{
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+/* Monospace */
