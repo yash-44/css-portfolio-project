@@ -359,6 +359,10 @@ body{
     
 }
 
+#workwith:hover{
+    transform: scale(1.2);
+}
+
 @keyframes moving-workwith{
     from{bottom: 2000px;}
     to{bottom: 0px;}
