@@ -73,115 +73,8 @@ body{
     border-radius: 50%;
 }
 
-@media (max-width:850px){
-
-    /* first-part */
-    .page{width: 2000px;}
-    .page1{height: 750px;width: 1000px;flex-direction: column;}
-    .first-part{width: 100%;display: flex;justify-content: center;align-items: center;height: 40%;}
-
-    .social-menu{
-        flex-direction: column;
-        margin-right: 50px;
-    }
-
-    #instagram{
-        /* border-top-right-radius: 8px;
-        border-top-left-radius: 8px; */
-        border-radius: 8px;
-        position: relative;
-        animation: color1 4s infinite  ;
-    }
-    
-    #linkdin{
-        position: relative;
-        animation: color2 4s infinite ;
-        animation-delay: 200ms;
-    }
-    
-    #facebook{
-        /* border-top-right-radius: 13px;
-        border-top-left-radius: 13px; */
-        border-radius: 50%;
-        position: relative;
-        animation: color3 4s infinite  ;
-        animation-delay: 400ms;
-    }
-    
-    #twitter{
-        border-radius: 50%;
-        position: relative;
-        animation: color4 4s infinite ;
-        animation-delay: 600ms;
-    }
-    
-    @keyframes color1{
-        0%{background-color: red; right: 0px;}
-        25%{background-color: blue;}
-        50%{background-color: green; right: 100px;}
-        75%{background-color: yellow;}
-        100%{background-color: purple; right: 0px;} 
-    
-    }
-    
-    @keyframes color2{
-        25%{background-color: red;}
-        50%{background-color: blue;right: 100px;}
-        75%{background-color: green;}
-        100%{background-color: yellow;right: 0px;}
-        0%{background-color: purple;right: 0px;}
-    
-    }
-    
-    @keyframes color3{
-        50%{background-color: red;right: 100px; }
-        75%{background-color: blue;}
-        100%{background-color: green;right: 0px;}
-        0%{background-color: yellow;right: 0px;}
-        25%{background-color: purple;}
-    
-    }
-    
-    @keyframes color4{
-        75%{background-color: red;}
-        100%{background-color: blue;right: 0px;}
-        0%{background-color: green;right: 0px;}
-        25%{background-color: yellow;}
-        50%{background-color: purple;right:100px;}
-        /* from {background-color: red; bottom: 0px;}
-        to {background-color: yellow; bottom: 50px;} */
-        
-    } 
-
-    /* second-part */
-
-    .second-part{height: 600px;}
-
-    /* secstion page-2 */
-
-    .page2{
-        /* height: 1000px;
-        width: 800px; */
-        display: flex;
-        justify-content: flex-start;
-        
-    }
-
-    .section-page2{
-        height: 1000px;
-        width: 1000px;
-        /* flex-direction: column; */
-        align-items: center;
-        
-        /* margin-top: 300px; */
-        margin-right: 850px;
-        
-    }
-
-    .about-section{
-        width: 600px;
-    }
-
+@media (max-width:480px){
+    #profile{display: none;}
 }
 
 .menu-bar{
@@ -194,7 +87,9 @@ body{
     /* background-color: green; */
 }
 
-
+@media (max-width:500px){
+    .menu-bar{display: none;}
+}
 
 
 .menu-bar-menu{
@@ -232,53 +127,6 @@ body{
     from{bottom: 0px;}
     to{bottom: 20px;}
 }
-
-@media (min-width: 851px){
-    .home , .profile, .inbox{
-        position: relative;
-        animation: moving-menubar-button 800ms;
-        animation-delay: 4.5s;
-        animation-iteration-count: 2;
-        animation-direction: alternate;
-    }
-    
-    @keyframes moving-menubar-button{
-        from{bottom: 0px;}
-        to{bottom: 20px;}
-    }
-}
-
-
-@media (max-width: 850px){
-    .home ,  .inbox{
-        position: relative;
-        animation: moving-menubar-button 1.5s;
-        animation-delay: 3s;
-        animation-iteration-count: 2;
-        animation-direction: alternate;
-    }
-
-    .profile{
-        position: relative;
-        animation: moving-profile-button 1.5s;
-        animation-delay: 3s;
-        animation-iteration-count: 2;
-        animation-direction: alternate;
-    }
-    
-    @keyframes moving-menubar-button{
-        from{right: 0px;}
-        to{right: 100px;}
-    }
-
-    @keyframes moving-profile-button{
-        from{left: 0px;}
-        to{left: 155px;}
-    }
-
-
-}
-
 
 #home-logo , #profile-logo , #inbox-logo{
     height: 30px;
@@ -318,64 +166,37 @@ body{
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 851px){
-
-
-    #instagram{
-        /* border-top-right-radius: 8px;
-        border-top-left-radius: 8px; */
-        border-radius: 8px;
-        display: inline-block;
-        animation: color1 0.8s infinite alternate  ease-in;
-    }
-
-    #linkdin{
-        display: inline-block;
-        animation: color2 0.8s infinite alternate  ease-in;
-        animation-delay: 200ms;
-    }
-
-    #facebook{
-        /* border-top-right-radius: 13px;
-        border-top-left-radius: 13px; */
-        border-radius: 50%;
-        display: inline-block;
-        animation: color3 0.8s infinite alternate  ease-in;
-        animation-delay: 400ms;
-    }
-
-    #twitter{
-        border-radius: 50%;
-        display: inline-block;
-        animation: color4 0.8s infinite alternate  ease-in;
-        animation-delay: 600ms;
-    }
-
-    @keyframes color1{
-        from{transform: translateY(-200%);background-color: red;}
-        to{transform: translateY(0);background-color: yellow;}
-        
-    }
-
-    @keyframes color2{
-        from{transform: translateY(-200%);background-color: blue;}
-        to{transform: translateY(0);background-color: blueviolet;}
-        
-    }
-
-    @keyframes color3{
-        from{transform: translateY(-200%);background-color: green;}
-        to{transform: translateY(0);background-color: orangered;}
-        
-    }
-
-    @keyframes color4{
-        from{transform: translateY(-200%);background-color: orange;}
-        to{transform: translateY(0);background-color: olivedrab;}
-        
-    }
+#instagram{
+    /* border-top-right-radius: 8px;
+    border-top-left-radius: 8px; */
+    border-radius: 8px;
+    position: relative;
+    animation: color1 3s infinite;
 }
-/* @keyframes color1{
+
+#linkdin{
+    position: relative;
+    animation: color2 3s infinite;
+    animation-delay: 200ms;
+}
+
+#facebook{
+    /* border-top-right-radius: 13px;
+    border-top-left-radius: 13px; */
+    border-radius: 50%;
+    position: relative;
+    animation: color3 3s infinite;
+    animation-delay: 400ms;
+}
+
+#twitter{
+    border-radius: 50%;
+    position: relative;
+    animation: color4 3s infinite;
+    animation-delay: 600ms;
+}
+
+@keyframes color1{
     0%{background-color: red; bottom: 0px;}
     25%{background-color: blue;}
     50%{background-color: green; bottom: 50px;}
@@ -410,8 +231,8 @@ body{
     50%{background-color: purple;bottom: 50px;}
     /* from {background-color: red; bottom: 0px;}
     to {background-color: yellow; bottom: 50px;} 
-    
-}  */
+    */
+} 
 
     
 #instagram:hover, #linkdin:hover, #facebook:hover, #twitter:hover{
@@ -448,7 +269,7 @@ body{
 
 .top-menu-bar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     /* background-color: black; */
     width: 100%;
@@ -566,7 +387,7 @@ body{
 
 .coding-area-section{
     /* background-color: brown; */
-    height: 63%;
+    height: 60%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -581,7 +402,7 @@ body{
     /* background-color: pink; */
     
     height: 80%;
-    width: 53%;
+    width: 45%;
     border: 2px grey solid;
     border-radius: 12px;
     position: relative;
@@ -655,14 +476,10 @@ body{
     font-family: monospace;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 225px;
+    margin-left: 270px;
     position: relative;
     animation: moving-code-text 6.50s;
     
-}
-
-@media (max-width:850px){
-    #code-text{margin-left: 280px;}
 }
 
 @keyframes moving-code-text{
